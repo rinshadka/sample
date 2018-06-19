@@ -1,3 +1,7 @@
 Sample code written by coder
 Edited by git hub
+<<<<<<< HEAD
 fourth edit
+=======
+third Edit
+>>>>>>> aa034088427bbc020be377eb6519cd7ad522b591
