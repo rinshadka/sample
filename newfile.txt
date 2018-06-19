@@ -1,2 +1,6 @@
 Sample code written by coder
 Edited by git hub
+<<<<<<< HEAD
+fourth edit
+=======
+third Edit
