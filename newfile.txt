@@ -1,5 +1,6 @@
 Sample code written by coder
 <<<<<<< HEAD
+<<<<<<< HEAD
 Edited by git hub second
 =======
 Edited by git hub
@@ -9,3 +10,6 @@ fourth edit
 third Edit
 >>>>>>> aa034088427bbc020be377eb6519cd7ad522b591
 >>>>>>> parent of e2ec4b7... first commit to second branch
+=======
+Edited by git hub second
+>>>>>>> e7ce6f183bebdc6cf4c3678d4cf2349e36c4cc40
