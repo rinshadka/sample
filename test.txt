@@ -1,1 +1,2 @@
-TT="hai"
+REPOS="ewoutkramer/fhir-net-api, synthetichealth/synthea, FirelyTeam/spark, smart-on-fhir/mpr-monitor-app, cerner/ascvd-risk-calculator, GuyClinch/IRiSTaxBot, hspc/ACOG-OPA-IG, hansenms/fhir-azure, Asymmetrik/node-fhir-server-mongo, simplifhir/simplifier-docs, montilab/CaDrA"
+GITHUB_TOKEN="af64017f502abf0fb6a66207532bfbd3a23e507f"
