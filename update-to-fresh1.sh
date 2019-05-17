@@ -11,7 +11,7 @@ do
     if [[ $CONTAINER =~ ^cf-* ]];
     then
         cd $CCF_PATH/$CONTAINER
-        sudo ccfmake stop
+        sudo ccfmake kill
         sudo ccfmake clean-images > /dev/null 2>&1
     fi
 done
