@@ -15,6 +15,7 @@ do
         sudo ccfmake clean-images > /dev/null 2>&1
     fi
 done
+cd $ASF_PATH
 sudo rm -rf $CCF_PATH
 
 # Update the following images to latest
@@ -37,5 +38,5 @@ sudo ccfmake clean-exited-containers > /dev/null 2>&1
 # Remove Dangling untagged container images
 sudo ccfmake clean-dangling-untagged-container-images
 
-cd $ASF_PATH
+
 sudo ansible-playbook -i "localhost," -c local playbooks/05_ccf-containers.ansible-playbook.yml --extra-vars="asf_user=$(whoami)"
