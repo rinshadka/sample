@@ -32,10 +32,10 @@ sudo docker pull traefik:v1.7.9-alpine
 sudo docker pull node:8.12-alpine
 
 # Remove Exited containers
-ccfmake clean-exited-containers > /dev/null 2>&1
+sudo ccfmake clean-exited-containers > /dev/null 2>&1
 
 # Remove Dangling untagged container images
-ccfmake clean-dangling-untagged-container-images
+sudo ccfmake clean-dangling-untagged-container-images
 
 cd $ASF_PATH
 sudo ansible-playbook -i "localhost," -c local playbooks/05_ccf-containers.ansible-playbook.yml --extra-vars="asf_user=$(whoami)"
