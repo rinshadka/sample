@@ -1,11 +1,11 @@
 name: "Run webhook"
 on:
   schedule:
-    - cron:  '* * * * *'    # At every minute
+    - cron:  '*/15 * * * *'    # At every minute
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Execute webhook for netlify deployment
-        run: echo "testing every minute"
+        run: echo "testing every 15 minute"
