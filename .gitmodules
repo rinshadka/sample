@@ -4,3 +4,7 @@
 [submodule "fider"]
 	path = fider
 	url = https://github.com/rinshadka/fider-mail
+[submodule "fider-test"]
+	path = fider-test
+	url = https://github.com/rinshadka/fider-mail
+	branch = master
