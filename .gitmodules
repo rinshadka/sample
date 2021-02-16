@@ -1,3 +1,6 @@
 [submodule "metricsnet"]
 	path = metricsnet
 	url = https://github.com/rinshadka/metricsnet
+[submodule "fider"]
+	path = fider
+	url = https://github.com/rinshadka/fider-mail
