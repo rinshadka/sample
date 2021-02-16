@@ -1,0 +1,3 @@
+[submodule "metricsnet"]
+	path = metricsnet
+	url = https://github.com/rinshadka/metricsnet
