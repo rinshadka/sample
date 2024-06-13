@@ -1,4 +1,4 @@
-name: "Run webhook"
+name: "Run webhook webhoo webhoo webhoo webhoo webhoo"
 on:
   schedule:
     - cron:  '0 */6 * * *'    # At every minute
