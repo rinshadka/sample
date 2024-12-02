@@ -1,6 +1,8 @@
 name: "Run webhook webhoo webhoo webhoo webhoo webhoo"
 on:
   push:
+    branches: [ "master" ]
+  workflow_dispatch:
 
 jobs:
   deploy:
