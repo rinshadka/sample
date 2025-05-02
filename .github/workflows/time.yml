@@ -1,0 +1,27 @@
+name: Show Current Time
+
+on:
+  workflow_dispatch:
+
+jobs:
+  show-time:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Print current time in UTC, EST, and IST
+        run: |
+          python3 - <<EOF
+          from datetime import datetime
+          import pytz
+
+          utc_now = datetime.now(pytz.utc)
+          est = utc_now.astimezone(pytz.timezone('US/Eastern'))
+          ist = utc_now.astimezone(pytz.timezone('Asia/Kolkata'))
+
+          print("Current Time (UTC):", utc_now.strftime("%Y-%m-%d %H:%M:%S %Z%z"))
+          print("Current Time (EST):", est.strftime("%Y-%m-%d %H:%M:%S %Z%z"))
+          print("Current Time (IST):", ist.strftime("%Y-%m-%d %H:%M:%S %Z%z"))
+          EOF
