@@ -16,7 +16,7 @@ concurrency:
 jobs:
     synthetic-techbd-devl-deployment:
       runs-on: ubuntu-latest
-      if: "!endsWith(github.event.release.tag_name, '-nexus') && !endsWith(github.event.release.tag_name, '-fusion')"
+      if: "!endsWith(github.event.release.tag_name, '-nexus') || !endsWith(github.event.release.tag_name, '-fusion')"
       steps:
         - uses: actions/checkout@v4
 
