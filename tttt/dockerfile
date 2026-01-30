@@ -6,4 +6,4 @@ ENV AWS_S3_BUCKET_NAME=${AWS_S3_BUCKET_NAME}
 ENV SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE}
 
 # Start the application
-CMD ["mvn", "clean", "compile", "spring-boot:run"]
+CMD ["bash", "-c", "java -jar target/nexus-ingestion-api-$(echo ${TAG} | cut -d'-' -f1).jar"]
